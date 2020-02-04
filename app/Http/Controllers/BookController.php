@@ -43,6 +43,7 @@ class BookController extends Controller
         request()->validate([
             'name' => 'required',
             'detail' => 'required',
+            'url' => 'required',
         ]);
 
 
@@ -90,6 +91,7 @@ class BookController extends Controller
         request()->validate([
             'name' => 'required',
             'detail' => 'required',
+            'url' => 'required',
         ]);
 
 

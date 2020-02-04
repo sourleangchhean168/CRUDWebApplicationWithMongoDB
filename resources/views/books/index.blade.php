@@ -26,6 +26,7 @@
             <th>No</th>
             <th>Name</th>
             <th>Details</th>
+            <th>URL</th>
             <th width="280px">Action</th>
         </tr>
 	    @foreach ($books as $book)
@@ -33,6 +34,7 @@
 	        <td>{{ ++$i }}</td>
 	        <td>{{ $book->name }}</td>
 	        <td>{{ $book->detail }}</td>
+            <td>{{ $book->url }}</td>
 	        <td>
                 <form action="{{ route('books.destroy',$book->id) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('books.show',$book->id) }}">Show</a>

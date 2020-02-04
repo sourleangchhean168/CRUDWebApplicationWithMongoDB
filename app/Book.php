@@ -19,6 +19,6 @@ class Book extends Eloquent
      * @var array
      */
     protected $fillable = [
-        'name', 'detail'
+        'name', 'detail', 'url'
     ];
 }

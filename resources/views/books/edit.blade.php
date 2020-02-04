@@ -44,6 +44,12 @@
 		            <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $book->detail }}</textarea>
 		        </div>
 		    </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>URL:</strong>
+                    <input type="text" name="url" value="{{ $book->url }}" class="form-control" placeholder="URL">
+                </div>
+            </div>
 		    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 		      <button type="submit" class="btn btn-primary">Submit</button>
 		    </div>
